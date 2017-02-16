@@ -12,11 +12,6 @@ public class HelloController{
 		return "Booyah. Hello World.";
 	}
 
-	@GetMapping("/foo")
-	public String getFoo() {
-		return "foo";
-	}
-
 
 	@PostMapping("/hello")
 	public String add(String myString) {
