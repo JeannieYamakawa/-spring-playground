@@ -28,4 +28,14 @@ public class HelloControllerTest {
 
 
     }
+    @Test
+    public void testHomepageGet(){
+        RequestBuilder request = MockMvcRequestBuilders.post("/hello");
+        this.mvc.perform(request)
+                .andExpect(status().isOk())
+
+    }
+
+
+
 }

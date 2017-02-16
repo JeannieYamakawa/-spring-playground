@@ -17,8 +17,9 @@ public class HelloController{
 		return "foo";
 	}
 
-	@GetMapping("/bar")
-	public String getBar() {
-		return "bar";
+
+	@PostMapping("/hello")
+	public String add(String myString) {
+		return "redirect:/hello"
 	}
 }
