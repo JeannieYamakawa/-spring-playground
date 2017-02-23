@@ -7,18 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/test")
-public class HelloController{
+@RequestMapping
+public class HelloController {
 
-	@GetMapping("/hello")
-	public String helloWorld() {
-		return "Booyah. Hello World.";
-	}
+    @GetMapping("/hello")
+    public String helloWorld() {
+        return "Booyah. Hello World.";
+    }
 
 
-	@PostMapping("/hello")
-	public String add(String myString) {
+    @PostMapping("/hello")
+    public String add(String myString) {
 
-		return "redirect:/hello";
-	}
+        return "redirect:/hello";
+    }
 }
